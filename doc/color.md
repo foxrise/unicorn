@@ -15,6 +15,12 @@ Use ``` bg-{color} ``` to control the background color of an element
 
 You can use background-{color} which is ```background``` in css
 
+You can use bg-hover-{color} to change the color while hover an element
+
+```
+<div class="bg-red bg-hover-green ">bg-red bg-hover-green</div>
+<div class="bg-red bg-hover-green">bg-red bg-hover-green</div>
+
 
 ## Text
 
