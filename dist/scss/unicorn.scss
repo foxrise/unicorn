@@ -11,6 +11,7 @@
       }
     }
   }
+}
 @each $name, $align in $verticalAlignLists {
   .vertical-align-#{$name} {
     vertical-align: $align;
