@@ -24,7 +24,7 @@
     }
   }
 }
-@each $name, $display in $$displayLists {
+@each $name, $display in $displayLists {
   .display-#{$name} {
     display: $display
   }
