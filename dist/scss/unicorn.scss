@@ -1,7 +1,27 @@
 @import "varible.scss"
+@import "mixin.scss"
 @each $name, $align in $verticalAlignLists {
   .vertical-align-#{$name} {
     vertical-align: $align;
+  }
+  @each $breakpointsName,$width in $breakpoints {
+    @include breakpointsMixin($width) {
+      .#{$breakpointsName}-vertical-align-#{$name} {
+        vertical-align: $align;
+      }
+    }
+  }
+}
+@each $name, $display in $$displayLists {
+  .display-#{$name} {
+    display: $display
+  }
+  @each $breakpointsName,$width in $breakpoints {
+    @include breakpointsMixin($width) {
+      .#{$breakpointsName}-display-#{$name} {
+        display: $display
+      }
+    }
   }
 }
 @each $name, $borderSize in $borderWidthLists {
