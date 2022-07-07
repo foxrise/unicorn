@@ -893,8 +893,15 @@
   height:100%;
   width:100%;
 }
-
+.h-w-full {
+  height:100%;
+  width:100%;
+}
 .s-w-h-full {
+  width:100vw;
+  height:100vh;
+}
+.s-h-w-full {
   width:100vw;
   height:100vh;
 }
@@ -904,3 +911,4 @@
 .s-h-full {
   height:100vh;
 }
+
