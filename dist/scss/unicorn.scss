@@ -1,5 +1,16 @@
 @import "varible.scss"
 @import "mixin.scss"
+@each $name, $align in $clearLists {
+  .clear-#{$name} {
+    clear: $align;
+  }
+  @each $breakpointsName,$width in $breakpoints {
+    @include breakpointsMixin($width) {
+      .#{$breakpointsName}-clear-#{$name} {
+        clear: $align;
+      }
+    }
+  }
 @each $name, $align in $verticalAlignLists {
   .vertical-align-#{$name} {
     vertical-align: $align;
