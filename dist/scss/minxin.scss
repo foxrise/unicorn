@@ -1,0 +1,24 @@
+@mixin breakpointsMixin($min-width) {
+  @media screen and (min-width: $min-width) {
+      @content
+  }
+};
+@mixin position-zindex-position($position, $z-index, $left, $right, $top, $bottom) {
+  position: $position;
+  z-index: $z-index;
+  left: $left;
+  right: $right;
+  top: $top;
+  bottom: $bottom;
+}
+@mixin fullBd-r($radius) {
+  border-radius: $radius;
+}
+@mixin height-width($height, $width) {
+  height: $height;
+  width: $width;
+}
+@mixin maxheight-width($height, $width) {
+  max-height: $height;
+  max-width: $width;
+}
