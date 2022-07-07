@@ -1,3 +1,4 @@
+@import 'varible.scss'
 @mixin breakpointsMixin($min-width) {
   @media screen and (min-width: $min-width) {
       @content
