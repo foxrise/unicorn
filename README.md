@@ -10,6 +10,8 @@ npm install unicorncss
 
 ### NextJS
 
+Paste ```import 'unicorn-framework/dist/css/unicorn.min.css'``` into your _app.js page and then the framework would be activate in your NextJS app
+
 ### NuxtJS
 
 ### ReactJS
