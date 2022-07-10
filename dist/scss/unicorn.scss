@@ -825,8 +825,6 @@
 }
 
 .card {
-  background-color: white;
-  border-radius: 5px;
   max-width:740px;
 
   .c-image {
@@ -859,8 +857,6 @@
 @each $breakpointsName,$width in $breakpoints {
   @include breakpointsMixin($width) {
     .#{$breakpointsName}-card {
-      background-color: white;
-      border-radius: 5px;
       max-width:740px;
     
       .c-image {
