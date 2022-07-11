@@ -40,16 +40,16 @@
   .bd-white-#{$name} {
     border: $borderSize solid white;
   }
-  .bd-grey-#{$name} {
-    border: $borderSize solid grey;
+  .bd-gray-#{$name} {
+    border: $borderSize solid gray;
   }
   @each $breakpointsName,$width in $breakpoints {
     @include breakpointsMixin($width) {
       .#{$breakpointsName}-bd-white-#{$name} {
         border: $borderSize solid white;
       }
-      .#{$breakpointsName}-bd-grey-#{$name} {
-          border: $borderSize solid grey;
+      .#{$breakpointsName}-bd-gray-#{$name} {
+          border: $borderSize solid gray;
       }
      }
   }
